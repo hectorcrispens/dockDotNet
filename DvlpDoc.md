@@ -173,3 +173,4 @@ Ahora es posible ver la aplicación abriendo un navegador web y pegando la sigui
 Debería ver algo como esto:
 
 ![swagger](images/swagger.png)
+

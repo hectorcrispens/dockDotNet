@@ -124,7 +124,7 @@ $ docker build -t dotnet -f dotnet.Dockerfile .
 También puede descargar la image ya construida desde [docker hub](https://hub.docker.com/)
 
 ```bash
-$ docker pull hectorcrispens/dotNet:latest
+$ docker pull hectorcrispens/dotnet:latest
 ```
 
 ------
