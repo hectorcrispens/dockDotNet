@@ -1,5 +1,13 @@
+![docker](images/docker.svg)               ![dotnet](images/dotnet48.svg)
 # docker image for dotNet
+Imagen de docker para el desarrollo de aplicaciones en .Net
+
 ![angular](https://img.shields.io/badge/.NETCore-5.0-0078d6?style=flat-square&logo=windows)   ![angular](https://img.shields.io/badge/Debian-10(buster)-a81d33?style=flat-square&logo=Debian)
+
+## Contributors
+
+[![hector](images/avatar-hector.svg)](https://www.linkedin.com/in/hector-orlando-25124a18a/)
+
 
 Versión 11.08.2021
 
@@ -12,7 +20,7 @@ Copyright (C) 2021.
 - Héctor Orlando, hcrispens
   hector.or.cr@gmail.com
 
-![docker](images/docker.svg)               ![dotnet](images/dotnet48.svg)
+
 
 
 
@@ -20,6 +28,7 @@ Copyright (C) 2021.
 
 
 - [docker image for dotNet](#docker-image-for-dotnet)
+  - [Contributors](#contributors)
   - [Descripción](#descripción)
   - [Instalación de docker en linux](#instalación-de-docker-en-linux)
   - [Compilar esta imagen](#compilar-esta-imagen)
@@ -148,7 +157,7 @@ $ docker run -it --rm dotnet:latest "dotnet -h"
 Copyright (C) 2021.
 
 - Héctor Orlando, hcrispens
-  hector.or.cr@gmail.com
+  - [![linkedin](https://img.shields.io/badge/LinkedIn--0a66c2?style=social&logo=linkedin)](https://www.linkedin.com/in/hector-orlando-25124a18a/) [![linkedin](https://img.shields.io/badge/GitHub--0a66c2?style=social&logo=GitHub)](https://github.com/hectorcrispens) [![linkedin](https://img.shields.io/badge/Gmail--0a66c2?style=social&logo=Gmail)](mailto:hector.or.cr@gmail.com)
 
 ### GNU General Public License
 
