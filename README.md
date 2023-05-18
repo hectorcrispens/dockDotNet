@@ -201,13 +201,19 @@ Ahora es posible ver la aplicación abriendo un navegador web y pegando la sigui
 
 ## Utilización de tool
 
-Como bien se mencionó, uno de los cambios en esta versión es la incporporación de tool. En este ejemplo vamos a incorporar **Entity Framework** para trabajar con **sqlite**.
+Si desea instalar una herramienta solo para acceso local (para el directorio y los subdirectorios actuales), debe agregar la herramienta a un archivo de manifiesto de herramienta. Para crear un archivo de manifiesto de herramienta, ejecute el comando `dotnet new tool-manifest`:
+
+```sh
+$ docker run --rm -it -v /home/$USER/mywebapi:/home/dotnet --name dotnet-cont -p 5000:5000 -p 5001:5001 dotnet "dotnet new tool-manifest"
+```
+
+Este comando nos crea una carpeta `.config` y dentro de ella el archivo `dotnet-tools.json` en el cual podemos ir cargando herramientas que necesitamos.
+
+En este ejemplo vamos a incorporar **Entity Framework** para trabajar.
 
 > *"La imagen incorpora un script, el cual se ejecuta cada vez que un contenedor levanta. Este script tiene como propósito actualizar el repositorio local de herramientas (tools)"* 
 
-Las tools se configuran a través de un archivo denominado `dotnet-tools.json`, en este archivo se lleva el registro de las herramientas con las que se va a trabajar. *La imagen incorpora este archivo con algunas herramientas minimas*. Dicho archivo se encuentra en la siguiente ubicación: `/home/.config/dotnet-tools.json` 
-
-Vamos a crear un archivo `/home/$USER/mywebapi/dotnet-tools.json`con la siguiente informacion:
+Las tools se configuran a través de este archivo denominado `dotnet-tools.json`, en este archivo se lleva el registro de las herramientas con las que se va a trabajar. *La imagen incorpora este archivo con algunas herramientas mínimas*. 
 
 ```json
 {

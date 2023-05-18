@@ -19,7 +19,7 @@ RUN apt-get update; \
 WORKDIR /home
 RUN dotnet new tool-manifest
 COPY dotnet-tools.json .config/dotnet-tools.json
-RUN dotnet tool restore
+#RUN dotnet tool restore
 
 # Gestion de Script de inicio
 COPY dotstart.sh /usr/local/bin/dotstart
